@@ -12,7 +12,7 @@ RUN apk update && \
 
 WORKDIR $HOME
 
-COPY src/ go.mod go.sum $HOME/
+COPY . $HOME
 
 FROM base as dev
 
